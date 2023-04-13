@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB81F1DA29E7E34A007EBB87 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CB81F1D629E7E181007EBB87 /* libxml2.tbd */; };
+		CB81F1DB29E7E34A007EBB87 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CB81F1D429E7DE22007EBB87 /* libiconv.tbd */; };
+		CB81F1DC29E7E34A007EBB87 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CB81F1D829E7E1CF007EBB87 /* libz.tbd */; };
 		E63B248E1966AA0200595E90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63B248D1966AA0200595E90 /* Foundation.framework */; };
 		E63B24901966AA0200595E90 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63B248F1966AA0200595E90 /* CoreGraphics.framework */; };
 		E63B24921966AA0200595E90 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63B24911966AA0200595E90 /* UIKit.framework */; };
@@ -22,7 +25,6 @@
 		E63B24B21966AA0200595E90 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63B24911966AA0200595E90 /* UIKit.framework */; };
 		E63B24BA1966AA0200595E90 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E63B24B81966AA0200595E90 /* InfoPlist.strings */; };
 		E63B24BC1966AA0200595E90 /* ImportSceneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E63B24BB1966AA0200595E90 /* ImportSceneTests.m */; };
-		E63B24D21966B8E300595E90 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E63B24D11966B8E300595E90 /* libiconv.dylib */; };
 		E63B24FE1966BA7F00595E90 /* DisplayAnimation.cxx in Sources */ = {isa = PBXBuildFile; fileRef = E63B24D41966BA7F00595E90 /* DisplayAnimation.cxx */; };
 		E63B24FF1966BA7F00595E90 /* DisplayCache.cxx in Sources */ = {isa = PBXBuildFile; fileRef = E63B24D61966BA7F00595E90 /* DisplayCache.cxx */; };
 		E63B25001966BA7F00595E90 /* DisplayCamera.cxx in Sources */ = {isa = PBXBuildFile; fileRef = E63B24D81966BA7F00595E90 /* DisplayCamera.cxx */; };
@@ -65,6 +67,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB81F1D429E7DE22007EBB87 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		CB81F1D629E7E181007EBB87 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		CB81F1D829E7E1CF007EBB87 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		E63B248A1966AA0200595E90 /* ImportScene.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImportScene.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E63B248D1966AA0200595E90 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E63B248F1966AA0200595E90 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -85,7 +90,6 @@
 		E63B24B71966AA0200595E90 /* ImportSceneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImportSceneTests-Info.plist"; sourceTree = "<group>"; };
 		E63B24B91966AA0200595E90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E63B24BB1966AA0200595E90 /* ImportSceneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImportSceneTests.m; sourceTree = "<group>"; };
-		E63B24D11966B8E300595E90 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		E63B24D41966BA7F00595E90 /* DisplayAnimation.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DisplayAnimation.cxx; path = ImportScene/DisplayAnimation.cxx; sourceTree = "<group>"; };
 		E63B24D51966BA7F00595E90 /* DisplayAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DisplayAnimation.h; path = ImportScene/DisplayAnimation.h; sourceTree = "<group>"; };
 		E63B24D61966BA7F00595E90 /* DisplayCache.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DisplayCache.cxx; path = ImportScene/DisplayCache.cxx; sourceTree = "<group>"; };
@@ -149,10 +153,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E63B24D21966B8E300595E90 /* libiconv.dylib in Frameworks */,
 				E63B24901966AA0200595E90 /* CoreGraphics.framework in Frameworks */,
+				CB81F1DC29E7E34A007EBB87 /* libz.tbd in Frameworks */,
+				CB81F1DA29E7E34A007EBB87 /* libxml2.tbd in Frameworks */,
 				E63B24921966AA0200595E90 /* UIKit.framework in Frameworks */,
 				E63B248E1966AA0200595E90 /* Foundation.framework in Frameworks */,
+				CB81F1DB29E7E34A007EBB87 /* libiconv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +199,9 @@
 		E63B248C1966AA0200595E90 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E63B24D11966B8E300595E90 /* libiconv.dylib */,
+				CB81F1D429E7DE22007EBB87 /* libiconv.tbd */,
+				CB81F1D629E7E181007EBB87 /* libxml2.tbd */,
+				CB81F1D829E7E1CF007EBB87 /* libz.tbd */,
 				E63B248D1966AA0200595E90 /* Foundation.framework */,
 				E63B248F1966AA0200595E90 /* CoreGraphics.framework */,
 				E63B24911966AA0200595E90 /* UIKit.framework */,
@@ -373,6 +381,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -535,7 +544,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -568,7 +577,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -579,8 +588,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD)";
-				"ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -588,14 +595,13 @@
 				INFOPLIST_FILE = "ImportScene/ImportScene-Info.plist";
 				"OTHER_LDFLAGS[sdk=iphoneos*]" = (
 					"-ObjC",
-					"\"/Applications/Autodesk/FBX SDK/2015.1/lib/ios-armv7/debug/libfbxsdk.a\"",
+					"\"/Applications/Autodesk/FBX SDK/2020.3.2/lib/ios-armv7/debug/libfbxsdk.a\"",
 				);
 				"OTHER_LDFLAGS[sdk=iphonesimulator*]" = (
 					"-ObjC",
-					"\"/Applications/Autodesk/FBX SDK/2015.1/lib/ios-i386/debug/libfbxsdk.a\"",
+					"\"/Applications/Autodesk/FBX SDK/2020.3.2/lib/ios/debug/libfbxsdk.a\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"/Applications/Autodesk/FBX SDK/2015.1/include\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -604,8 +610,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD)";
-				"ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -613,15 +617,15 @@
 				INFOPLIST_FILE = "ImportScene/ImportScene-Info.plist";
 				"OTHER_LDFLAGS[sdk=iphoneos*]" = (
 					"-ObjC",
-					"\"/Applications/Autodesk/FBX SDK/2015.1/lib/ios-armv7/debug/libfbxsdk.a\"",
+					"\"/Applications/Autodesk/FBX SDK/2020.3.2/lib/ios-armv7/release/libfbxsdk.a\"",
 				);
 				"OTHER_LDFLAGS[sdk=iphonesimulator*]" = (
 					"-ObjC",
-					"\"/Applications/Autodesk/FBX SDK/2015.1/lib/ios-i386/release/libfbxsdk.a\"",
+					"\"/Applications/Autodesk/FBX SDK/2020.3.2/lib/ios/release/libfbxsdk.a\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"/Applications/Autodesk/FBX SDK/2015.1/include\"";
 				WRAPPER_EXTENSION = app;
+				USER_HEADER_SEARCH_PATHS = "\"/Applications/Autodesk/FBX SDK/2020.3.2/include\"";
 			};
 			name = Release;
 		};
@@ -684,6 +688,7 @@
 				E63B24C11966AA0200595E90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E63B24C21966AA0200595E90 /* Build configuration list for PBXNativeTarget "ImportSceneTests" */ = {
 			isa = XCConfigurationList;
@@ -692,6 +697,7 @@
 				E63B24C41966AA0200595E90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
